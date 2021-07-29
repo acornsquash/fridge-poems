@@ -1,7 +1,11 @@
 const express = require('express')
 const path = require('path')
+// const volleyball = require('volleyball')
 
 const app = express()
+
+const debug = process.env.NODE_ENV === 'test'
+// app.use(volleyball.custom({ debug }))
 
 // body parsing middleware
 app.use(express.json())
@@ -10,11 +14,11 @@ app.use(express.urlencoded({ extended: true }))
 // static middleware
 app.use(express.static(path.join(__dirname, '../public')))
 
-app.use('/api', require('./api')) // include our routes!
+app.use('/api', require('./routes')) // include our routes!
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/index.html'))
-}) // Send index.html for any other requests
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../public/index.html'))
+// }) // Send index.html for any other requests
 
 // error handling middleware
 app.use((err, req, res, next) => {
