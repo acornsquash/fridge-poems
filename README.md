@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Basic Idea
 
-The goal is to create an app simulation of refridgerator poetry (all the joy of random poems without the hassle of your actual roommates!) 
+The goal is to create an app simulation of refrigerator poetry (all the joy of random poems without the hassle of your actual roommates!) 
 Users will be able to create a new "fridge", share their code with friends, and then log in to create new poems and see what their friends have written 
 to create a new poem -- click the magnets to grab a random word from the database, and rearrange the magnets! 
 
