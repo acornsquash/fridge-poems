@@ -3,11 +3,11 @@ const Content = require('../models/content')
 
 
 
-router.use((req, res, next) => {
-    const err = new Error('API route not found!')
-    err.status = 404
-    next(err)
-  })
+// router.use((req, res, next) => {
+//     const err = new Error('API route not found booooo')
+//     err.status = 404
+//     next(err)
+//   })
 
 router.get('/', async (req, res, next) => {
     try {

@@ -1,7 +1,7 @@
 'use strict'
 
-const {db} = require('./server/db')
-const app = require('./server')
+const db = require('./server/db')
+const app = require('./server/api')
 const PORT = 3000
 
 db.sync() 
